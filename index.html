@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Baby | Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo"><span class="logo-box">MB</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="greeting">Hello, I'm</p>
+
+                <h1>Maria Baby</h1>
+
+                <h2>Aspiring Software Developer</h2>
+
+                <p>
+                    B.Tech Computer Science and Engineering graduate passionate
+                    about building web applications and solving real-world
+                    problems using software.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">
+                        View Projects
+                    </a>
+
+                    <a href="Files/Resume.pdf" class="btn secondary-btn" download>
+                        Download Resume
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="section">
+
+            <div class="section-heading">
+                <p>Get to know me</p>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-content">
+
+                <p>
+                    I am a Computer Science and Engineering graduate from
+                    Federal Institute of Science and Technology (FISAT),
+                    with a strong interest in software development.
+                </p>
+
+                <p>
+                    I have hands-on experience in developing web applications
+                    using technologies such as Angular, React, Node.js,
+                    Firebase and MongoDB. I have also worked on a
+                    machine learning project involving movie popularity
+                    prediction and audience segmentation.
+                </p>
+
+                <p>
+                    I am currently looking for an opportunity where I can
+                    apply my technical skills, learn from experienced
+                    developers and contribute to real-world software projects.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+
+            <div class="section-heading">
+                <p>What I work with</p>
+                <h2>Technical Skills</h2>
+            </div>
+
+            <div class="skills-container">
+
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>Python</p>
+                    <p>C</p>
+                    <p>SQL</p>
+                    <p>Java</p>
+                    <p>JavaScript</p>
+                    <p>TypeScript</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>React</p>
+                    <p>Angular</p>
+                    <p>Bootstrap</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend & Database</h3>
+                    <p>Node.js</p>
+                    <p>Express.js</p>
+                    <p>MongoDB</p>
+                    <p>Firebase</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Other</h3>
+                    <p>Git</p>
+                    <p>GitHub</p>
+                    <p>Docker</p>
+                    <p>Machine Learning</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+                <p>What I've built</p>
+                <h2>Projects</h2>
+            </div>
+
+
+            <div class="projects-container">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+
+                    <div class="project-gallery">
+
+                        <button class="gallery-btn prev" onclick="changeSlide(this, -1)">
+                            &#10094;
+                        </button>
+
+                        <div class="gallery-images">
+                            <img src="images/courier_home.jpg" alt="Courier Service Management System - Home Page"
+                                class="active">
+                            <img src="images/Userdetails.jpg" alt="Courier Service Management System - Booking Page">
+
+                            <img src="images/Track.jpg" alt="Courier Service Management System - Tracking Page">
+
+                        </div>
+
+                        <button class="gallery-btn next" onclick="changeSlide(this, 1)">
+                            &#10095;
+                        </button>
+
+                        <div class="gallery-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>Courier Service Management System</h3>
+
+                        <p>
+                            A web-based courier management system that allows
+                            users to book parcels, make payments, track orders
+                            and view delivery status.
+                        </p>
+
+                        <div class="technologies">
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                            <span>Firebase</span>
+                            <span>Bootstrap</span>
+                        </div>
+
+                        <a href="#https://github.com/maria123-baby/ExpressD-Courier-Service-Management.git"
+                            class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 2 -->
+                <article class="project-card">
+
+                    <div class="project-gallery">
+
+                        <button class="gallery-btn prev" onclick="changeSlide(this, -1)">
+                            &#10094;
+                        </button>
+
+                        <div class="gallery-images">
+                            <img src="images/movie_popularity_homepage.png"
+                                alt="Movie Popularity Prediction - Input Page" class="active">
+
+                            <img src="images/predict_success.png" alt="Movie Popularity Prediction - Result Page">
+
+                        </div>
+
+                        <button class="gallery-btn next" onclick="changeSlide(this, 1)">
+                            &#10095;
+                        </button>
+
+                        <div class="gallery-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>Movie Popularity & Target Audience Prediction</h3>
+
+                        <p>
+                            A machine learning application that predicts
+                            movie popularity before release and segments
+                            potential audiences based on pre-production data.
+                        </p>
+
+                        <div class="technologies">
+                            <span>Python</span>
+                            <span>XGBoost</span>
+                            <span>KNN</span>
+                            <span>Fuzzy C-Means</span>
+                            <span>Flask</span>
+                        </div>
+
+                        <a href="#https://github.com/maria123-baby/Movie-Success-Prediction-using-ML.git"
+                            class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 3 -->
+                <article class="project-card">
+
+                    <div class="project-gallery">
+
+                        <button class="gallery-btn prev" onclick="changeSlide(this, -1)">
+                            &#10094;
+                        </button>
+
+                        <div class="gallery-images">
+                            <img src="images/todo_home.png" alt="Todo Application - Home Page" class="active">
+                            <img src="images/todo_login.png" alt="Todo Application - Login Page">
+
+                            <img src="images/todo.png" alt="Todo Application - Todo List">
+
+                        </div>
+
+                        <button class="gallery-btn next" onclick="changeSlide(this, 1)">
+                            &#10095;
+                        </button>
+
+                        <div class="gallery-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <h3>TaskFlow – Todo Application</h3>
+
+                        <p>
+                            A task management web application that allows
+                            users to securely log in and manage their
+                            personal tasks.
+                        </p>
+
+                        <div class="technologies">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                        </div>
+
+                        <a href="#https://github.com/maria123-baby/TODO-APP.git" class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+
+            <div class="section-heading">
+                <p>My experience</p>
+                <h2>Internship</h2>
+            </div>
+
+            <div class="experience-card">
+
+                <h3>NEST Digital Academy</h3>
+
+                <p class="experience-role">
+                    Frontend Application Development using Angular
+                </p>
+
+                <p class="experience-date">
+                    February 2024
+                </p>
+
+                <p>
+                    Worked on frontend development tasks using HTML, CSS,
+                    Bootstrap, Angular and TypeScript. Gained practical
+                    experience with Angular components, data binding,
+                    routing and Angular CLI.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+
+            <div class="section-heading">
+                <p>My academic background</p>
+                <h2>Education</h2>
+            </div>
+
+            <div class="education-card">
+
+                <h3>B.Tech Computer Science and Engineering</h3>
+
+                <p>
+                    Federal Institute of Science and Technology (FISAT)
+                </p>
+
+                <p>2021 – 2025</p>
+                <p>CGPA : 8.65</p>
+
+            </div>
+            <div class="education-card">
+
+                <h3>Plus Two - Bio-Maths</h3>
+
+                <p>
+                    MGM HSS Kuruppampady
+                </p>
+
+                <p>2019 – 2021</p>
+                <p>Percentage : 99%</p>
+
+            </div>
+
+            <div class="education-card">
+
+                <h3>10th</h3>
+
+                <p>
+                    St.Augustine's GHSS Kothamangalam
+                </p>
+
+                <p>2019</p>
+                <p>Percentage : 95%</p>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+
+            <div class="section-heading">
+                <p>Let's connect</p>
+                <h2>Contact Me</h2>
+            </div>
+
+            <div class="contact-content">
+
+                <p>
+                    I'm currently looking for opportunities in Software
+                    Development. Feel free to connect with me.
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:maria.by1793@gmail.com">
+                        Email
+                    </a>
+
+                    <a href="https://github.com/maria123-baby" target="_blank">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/maria-baby-mb123" target="_blank">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© Maria Baby. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
